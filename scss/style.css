@@ -1,0 +1,1412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+@font-face {
+  font-family: "grec";
+  src: url("../font/dsgreece.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+li {
+  list-style-type: none;
+}
+
+header {
+  font-family: "Raleway";
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(196, 196, 196, 0.137) 23%, rgb(255, 255, 255) 100%);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  z-index: 0;
+}
+header nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 20px;
+}
+header nav:nth-child(2) {
+  display: none;
+}
+header nav ul:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul:nth-child(2) a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+header nav ul:nth-child(3) a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.cont {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+main {
+  padding-top: 100px;
+  background-image: url(../icon/mainFon.png);
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "grec";
+}
+main .head {
+  height: 100vh;
+}
+main .head .block {
+  position: relative;
+  width: 500px;
+}
+main .head .block img {
+  width: 50%;
+  margin-bottom: 41px;
+}
+main .head .block h3 {
+  font-weight: 400;
+  font-size: 40.7062px;
+  line-height: 100%;
+  color: #000000;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+main .head .block h1 {
+  font-weight: 400;
+  font-size: 166.725px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #1d3772;
+}
+main .head .block h2 {
+  font-weight: 400;
+  font-size: 65.1312px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+}
+main .price {
+  margin-top: 150px;
+}
+main .price h2 {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+main .price .gridBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 573px);
+  gap: 20px;
+}
+main .price .gridBox .elem {
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s !important;
+  background-color: #721d1d;
+}
+main .price .gridBox .elem .text {
+  color: #ffffff;
+  padding: 0 20px;
+}
+main .price .gridBox .elem .text h3 {
+  font-weight: 400;
+  font-size: 80.4707px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .price .gridBox .elem .text h4 {
+  font-weight: 700;
+  font-size: 31.4312px;
+  line-height: 100%;
+  font-family: "Raleway";
+  color: #ffffff;
+  opacity: 0.6;
+}
+main .price .gridBox .elem .text p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: 10px;
+  max-width: 312px;
+}
+main .price .gridBox .elem .text .btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 10px;
+}
+main .price .gridBox .elem .text .btnBox button {
+  width: 45%;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2666666667);
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "grec";
+  cursor: pointer;
+}
+main .price .gridBox .elem .bot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0.4;
+}
+main .price .gridBox .elem:nth-child(1) {
+  grid-column: 1/3;
+  background: #1d3772;
+}
+main .price .gridBox .elem:nth-child(1) .text {
+  margin-top: 42px;
+}
+main .price .gridBox .elem:nth-child(1) .text .btnBox button {
+  width: 30%;
+}
+main .price .gridBox .elem:nth-child(2) {
+  background-color: #25764e;
+}
+main .price .gridBox .elem:nth-child(2) .img {
+  margin-bottom: 30px;
+}
+main .price .gridBox .elem:nth-child(3) {
+  background-color: #f07925;
+}
+main .price .gridBox .elem:nth-child(4) {
+  background-color: #f7a902;
+}
+main .price .gridBox .elem:nth-child(5) {
+  background-color: #532d87;
+}
+main .price .gridBox .elem .img {
+  width: 100%;
+}
+main .price .gridBox .elem .img img {
+  width: 100%;
+}
+main .price .gridBox .elem:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+main .swipss {
+  display: none;
+}
+main .swipss h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+main .swipss .mySwiper1 {
+  width: 100%;
+}
+main .swipss .mySwiper1 .swiper-wrapper {
+  width: 100%;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem {
+  transition: 0.3s;
+  height: 693px;
+  position: relative;
+  cursor: pointer;
+  background-color: #721d1d;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text {
+  color: #ffffff;
+  padding: 0 20px;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text h3 {
+  font-weight: 400;
+  font-size: 80.4707px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text h4 {
+  font-weight: 700;
+  font-size: 31.4312px;
+  line-height: 100%;
+  font-family: "Raleway";
+  color: #ffffff;
+  opacity: 0.6;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: 10px;
+  max-width: 312px;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text .btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 10px;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .text .btnBox button {
+  width: 45%;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2666666667);
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "grec";
+  cursor: pointer;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .bot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0.4;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(1) {
+  grid-column: 1/3;
+  background: #1d3772;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(1) .text {
+  margin-top: 42px;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(1) .text .btnBox button {
+  width: 30%;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(2) {
+  background-color: #25764e;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(2) .img {
+  margin-bottom: 30px;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(3) {
+  background-color: #f07925;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(4) {
+  background-color: #f7a902;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:nth-child(5) {
+  background-color: #532d87;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .img {
+  width: 100%;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem .img img {
+  width: 100%;
+}
+main .swipss .mySwiper1 .swiper-wrapper .swiper-slide .elem:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+main .product {
+  display: none;
+  margin-top: 200px;
+}
+main .product h2 {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .product .box {
+  width: 100%;
+  height: 100vh;
+}
+main .product .box .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+main .product .box .mySwiper .swipCont {
+  width: 100%;
+  height: 100%;
+}
+main .product .box .mySwiper .swipCont .swip:nth-child(1) {
+  background-color: #000000;
+}
+main .product .box .mySwiper .swipCont .swip:nth-child(2) {
+  background-color: #1d3772;
+}
+main .product .box .mySwiper .swipCont .swip:nth-child(3) {
+  background-color: #532d87;
+}
+main .product .box .mySwiper .castm {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+main .product .box .mySwiper .castm .swiper-pagination-fraction {
+  width: 200px !important;
+  font-weight: 400;
+  font-size: 39.0625px;
+  line-height: 100%;
+  color: #fff;
+  font-family: "Raleway";
+}
+main .product .box .mySwiper .castm .swiper-pagination-fraction .swiper-pagination-current {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+}
+main .enjoy h2 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+main .enjoy .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .enjoy .box .blocks {
+  width: 450px;
+  padding: 30px 20px;
+  min-height: 608px;
+  position: relative;
+  transition: all 1s !important;
+}
+main .enjoy .box .blocks:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+main .enjoy .box .blocks:nth-child(1) {
+  background: #532d87;
+}
+main .enjoy .box .blocks:nth-child(2) {
+  background: #25764e;
+}
+main .enjoy .box .blocks:nth-child(3) {
+  background: #e3083b;
+}
+main .enjoy .box .blocks .img {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main .enjoy .box .blocks .img img {
+  max-width: 100%;
+  width: auto;
+}
+main .enjoy .box .blocks .text h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+main .enjoy .box .blocks .text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.6;
+}
+main .enjoy .box .blocks .fons {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 0;
+  opacity: 0.4;
+}
+main .animScrol .a {
+  width: 100%;
+}
+main .animScrol .container {
+  width: 100%;
+  overflow: hidden;
+}
+main .animScrol .box {
+  margin: 16px 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-animation: runScrol 8s linear infinite;
+          animation: runScrol 8s linear infinite;
+}
+main .animScrol .box .img {
+  padding: 2px 5px;
+  background-color: #f7a902;
+}
+main .animScrol .box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+}
+main .animScrol .comentbox {
+  width: 100%;
+  height: 52.66px;
+  background-color: #f7a902;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .animScrol .comentbox img {
+  width: 100%;
+}
+main .comment {
+  margin-top: 200px;
+  background-color: #1d3772;
+}
+main .comment .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .comment .box .block {
+  width: 50%;
+}
+main .comment .box .block p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  font-family: "Raleway";
+  margin-top: 20px;
+}
+main .comment .box .block img {
+  width: 100%;
+}
+main .comment .box .block h2 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .prevue {
+  padding-top: 200px;
+  background-color: #1d3772;
+}
+main .prevue h2 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .prevue .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .prevue .box .block {
+  width: 334.25px;
+  height: 646.05px;
+  position: relative;
+  padding-top: 20px;
+  padding: 20px;
+  transition: all 1s !important;
+}
+main .prevue .box .block:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+main .prevue .box .block:nth-child(1) {
+  background-color: #532d87;
+}
+main .prevue .box .block:nth-child(2) {
+  background: #25764e;
+}
+main .prevue .box .block:nth-child(3) {
+  background: #e3083b;
+}
+main .prevue .box .block:nth-child(4) {
+  background: #f07925;
+}
+main .prevue .box .block .img {
+  width: 100%;
+  text-align: center;
+}
+main .prevue .box .block .img img {
+  max-width: 100%;
+  width: auto;
+}
+main .prevue .box .block .text {
+  margin-top: 10px;
+}
+main .prevue .box .block .text h4 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 100%;
+  color: #fff;
+}
+main .prevue .box .block .text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+main .prevue .box .block .fon {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  opacity: 0.4;
+}
+main .contact {
+  padding-top: 160px;
+  background-color: #1d3772;
+}
+main .contact h2 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+main .contact .box {
+  display: flex;
+  gap: 20px;
+  min-height: 333px;
+}
+main .contact .box .block:nth-child(1) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .contact .box .block:nth-child(1) form {
+  height: 333px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .contact .box .block:nth-child(2) {
+  width: 25%;
+  background-color: #f7a902;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .contact .box .block:nth-child(2) .text {
+  padding: 30px 20px;
+}
+main .contact .box .block:nth-child(2) a {
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 21px;
+}
+main .contact .box .block:nth-child(2) p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+main .contact .box .block:nth-child(2) img {
+  opacity: 0.3;
+  width: 100%;
+}
+main .contact .box .block:nth-child(3) {
+  width: 45%;
+}
+main .contact .box .block:nth-child(3) iframe {
+  width: 100%;
+  height: 100%;
+}
+main .contact .box .block .inp {
+  display: block;
+  width: 100%;
+  height: 20%;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  font-size: 18px;
+  font-family: "grec";
+  color: #fff;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 20px;
+  background-image: url(../icon/Vector\ \(4\).svg);
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+main .contact .box .block button {
+  font-family: "grec";
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  color: #1d3772;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  border: 0;
+}
+
+footer {
+  background-color: #1d3772;
+  padding: 20px;
+}
+footer .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .box .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .box .block:nth-child(3) p {
+  font-family: "Raleway";
+}
+footer .box .block p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-family: "grec";
+}
+
+.modal {
+  display: none;
+}
+
+.modalUp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../icon/fonEar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.modalUp::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4039215686);
+  left: 0;
+  z-index: 1;
+}
+.modalUp .box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  text-align: center;
+  max-width: 739px;
+  position: relative;
+  z-index: 2;
+}
+.modalUp .box p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  font-family: "grec";
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.modalUp .box .btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.modalUp .box .btnBox button {
+  width: 196px;
+  height: 65px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  font-family: "grec";
+  color: #fff;
+  cursor: pointer;
+  background-image: url(../icon/Vector\ \(4\).svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.modalUp h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  font-family: "grec";
+}
+
+.modalActiv {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 12;
+  display: block;
+}
+.modalActiv .clous {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 12;
+  cursor: pointer;
+}
+.modalActiv .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+.modalActiv .mySwiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava_1 {
+  position: absolute;
+  width: 35%;
+  top: -10%;
+  left: -5%;
+  z-index: 4;
+  transform: rotate(90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava_2 {
+  position: absolute;
+  width: 30%;
+  bottom: -10%;
+  right: -10%;
+  transform: rotate(-90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .ell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .box {
+  position: relative;
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .text {
+  max-width: 690px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  text-shadow: 0 0 10px #000;
+  color: #ffffff;
+  margin-top: 5%;
+  font-family: "grec";
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .sirclssa {
+  -webkit-animation: sircls 8s infinite linear;
+          animation: sircls 8s infinite linear;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  border-radius: 50%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .thisIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  box-shadow: 0 0 10px #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .textUpper {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 249.414px;
+  line-height: 50%;
+  top: 0;
+  left: -75%;
+  z-index: 1;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .textLover {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 249.414px;
+  line-height: 50%;
+  bottom: 10%;
+  right: -75%;
+  z-index: 3;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava1 {
+  position: absolute;
+  width: 100%;
+  top: -40%;
+  right: -40%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava2 {
+  position: absolute;
+  width: 100%;
+  bottom: -40%;
+  left: -40%;
+  transform: rotate(180deg);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .textUpper {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 249.414px;
+  line-height: 50%;
+  top: 0;
+  left: -150%;
+  z-index: 1;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .textLover {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 249.414px;
+  line-height: 50%;
+  bottom: 10%;
+  right: -75%;
+  z-index: 3;
+  transform: translate(30%, 30%);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .trava1 {
+  position: absolute;
+  width: 150%;
+  top: -50%;
+  right: -50%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .trava2 {
+  position: absolute;
+  width: 150%;
+  bottom: -50%;
+  left: -50%;
+  transform: rotate(180deg);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .trava_1 {
+  position: absolute;
+  width: 50%;
+  top: -40%;
+  left: -25%;
+  z-index: 4;
+  transform: rotate(90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .trava_2 {
+  position: absolute;
+  width: 50%;
+  bottom: -50%;
+  right: -20%;
+  transform: rotate(-90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .textUpper {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 149.414px;
+  line-height: 50%;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .textLover {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 149.414px;
+  line-height: 50%;
+  bottom: 10%;
+  right: -75%;
+  z-index: 3;
+  transform: translate(30%, 30%);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .trava1 {
+  position: absolute;
+  width: 200%;
+  top: -70%;
+  right: -70%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .trava2 {
+  position: absolute;
+  width: 200%;
+  bottom: -70%;
+  left: -70%;
+  transform: rotate(180deg);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .trava_1 {
+  position: absolute;
+  width: 60%;
+  top: -40%;
+  left: -25%;
+  z-index: 4;
+  transform: rotate(90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .trava_2 {
+  position: absolute;
+  width: 60%;
+  bottom: -50%;
+  right: -20%;
+  transform: rotate(-90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .textUpper {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 149.414px;
+  line-height: 50%;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .textLover {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 149.414px;
+  line-height: 50%;
+  bottom: 10%;
+  right: -75%;
+  z-index: 3;
+  transform: translate(30%, 30%);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .trava1 {
+  position: absolute;
+  width: 100%;
+  top: -50%;
+  right: -50%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .trava2 {
+  position: absolute;
+  width: 100%;
+  bottom: -50%;
+  left: -50%;
+  transform: rotate(180deg);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .trava_1 {
+  position: absolute;
+  width: 60%;
+  top: -40%;
+  left: -25%;
+  z-index: 4;
+  transform: rotate(90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .trava_2 {
+  position: absolute;
+  width: 60%;
+  bottom: -50%;
+  right: -20%;
+  transform: rotate(-90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .textUpper {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 249.414px;
+  line-height: 50%;
+  top: 0;
+  left: -150%;
+  z-index: 1;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .textLover {
+  position: absolute;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 900;
+  font-size: 149.414px;
+  line-height: 50%;
+  bottom: 10%;
+  right: -75%;
+  z-index: 3;
+  transform: translate(30%, 30%);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .trava1 {
+  position: absolute;
+  width: 120%;
+  top: -50%;
+  right: -50%;
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .trava2 {
+  position: absolute;
+  width: 120%;
+  bottom: -50%;
+  left: -50%;
+  transform: rotate(180deg);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .trava_1 {
+  position: absolute;
+  width: 60%;
+  top: -40%;
+  left: -25%;
+  z-index: 4;
+  transform: rotate(90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-wrapper .swiper-slide:nth-child(5) .trava_2 {
+  position: absolute;
+  width: 60%;
+  bottom: -50%;
+  right: -20%;
+  transform: rotate(-90deg);
+  filter: blur(5px);
+}
+.modalActiv .mySwiper .swiper-pagination {
+  width: 150px;
+  height: 90px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 39.0625px;
+  line-height: 100%;
+}
+.modalActiv .mySwiper .swiper-pagination .swiper-pagination-current {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+}
+
+@-webkit-keyframes runScrol {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes runScrol {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes animeleft {
+  0% {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+    opacity: 1;
+  }
+}
+@keyframes animeleft {
+  0% {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animeright {
+  0% {
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes animeright {
+  0% {
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    right: 0%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes sircls {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sircls {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1200px) {
+  .textUpper {
+    display: none !important;
+  }
+  .textLover {
+    display: none !important;
+  }
+  .v h2 {
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+@media (max-width: 940px) {
+  .box {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 20px !important;
+  }
+  .enjoy {
+    background-color: #1d3772;
+  }
+  .comment {
+    margin: 0 !important;
+    padding-top: 130px;
+  }
+  .num {
+    display: none !important;
+  }
+  .burger {
+    width: 40px;
+    display: block;
+  }
+  header {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    background: transparent;
+    position: relative;
+  }
+  main .comment .box .block {
+    width: 100%;
+  }
+  main {
+    padding-top: 0px;
+    background-position: top right;
+    background-size: 100% 36%;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+  }
+  .head .block {
+    width: 400px !important;
+  }
+  .head h1 {
+    font-weight: 400;
+    font-size: 106px !important;
+  }
+  .head .tt {
+    text-align: center;
+  }
+  .animScrol {
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+  .modal {
+    top: 0 !important;
+  }
+  .v {
+    text-align: left !important;
+    padding: 20px 20px;
+  }
+  .v h2 {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 880px) {
+  main .price .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 533px);
+  }
+  main .enjoy {
+    padding-top: 50px;
+  }
+  main .enjoy h2 {
+    margin-bottom: 40px;
+  }
+  header nav:nth-child(1) {
+    display: none;
+  }
+  header nav:nth-child(2) {
+    display: flex;
+  }
+}
+@media (max-width: 720px) {
+  main .contact .box .block {
+    width: 100% !important;
+  }
+  main .prevue h2 {
+    margin-bottom: 50px;
+  }
+  main .comment .box .block h2 {
+    margin-bottom: 50px;
+  }
+  .enjoy {
+    margin: 0;
+    padding-top: 100px;
+  }
+  main .contact .box .block:nth-child(3) iframe {
+    height: 333px;
+  }
+}
+@media (max-width: 660px) {
+  main .price .gridBox .elem:nth-child(1) {
+    grid-column: 1/2;
+  }
+  main .price .gridBox {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(6, 633px);
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .text {
+    font-size: 16px;
+  }
+  .price {
+    display: none !important;
+  }
+  .swipss {
+    display: block !important;
+  }
+}
+@media (max-width: 455px) {
+  main .price h2 {
+    color: #000;
+    font-size: 70px;
+    opacity: 0.8;
+  }
+  main .enjoy h2 {
+    font-size: 45px;
+  }
+  main .comment .box .block h2 {
+    font-size: 45px;
+  }
+  main .prevue h2 {
+    font-size: 45px;
+  }
+  .modalActiv .mySwiper .swiper-pagination {
+    width: 100%;
+    font-weight: 400;
+    font-size: 21.4844px;
+    line-height: 100%;
+    height: auto;
+  }
+  .modalActiv .mySwiper .swiper-pagination .swiper-pagination-current {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 100%;
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    text-align: start;
+    padding: 19px;
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .text h3 {
+    display: block !important;
+    font-weight: 900;
+    font-size: 53.5714px;
+    line-height: 100%;
+    font-family: "Raleway";
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .ell {
+    width: 100%;
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .ell .box {
+    width: 60%;
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava1 {
+    top: -10%;
+    right: -10%;
+  }
+  .modalActiv .mySwiper .swiper-wrapper .swiper-slide .trava2 {
+    bottom: -10%;
+    left: -10%;
+  }
+}/*# sourceMappingURL=style.css.map */
