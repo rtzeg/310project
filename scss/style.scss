@@ -4,20 +4,17 @@
   box-sizing: border-box;
   transition: all 0.5s;
 }
-
 @mixin flex($a, $s) {
   display: flex;
   align-items: $a;
   justify-content: $s;
 }
-
 @font-face {
   font-family: "grec";
   src: url("../font/dsgreece.ttf");
   font-weight: normal;
   font-style: normal;
 }
-
 li {
   list-style-type: none;
 }
